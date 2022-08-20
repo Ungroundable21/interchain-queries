@@ -1,0 +1,35 @@
+global:
+    memo: Ungroundable#0197
+default_chain: gaia
+chains:
+  gaia:
+    key: wallet
+    chain-id: GAIA
+    rpc-addr: http://195.201.241.25:23657
+    grpc-addr: http://195.201.241.25:23090
+    account-prefix: cosmos
+    keyring-backend: test
+    gas-adjustment: 1.2
+    gas-prices: 0.01uatom
+    key-directory: /root/.icq/keys
+    debug: true
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+  stride:
+    key: wallet
+    chain-id: STRIDE-TESTNET-4
+    rpc-addr: http://65.21.149.33:16657
+    grpc-addr: http://65.21.149.33:16090
+    account-prefix: stride
+    keyring-backend: test
+    gas-adjustment: 1.2
+    gas-prices: 0.01ustrd
+    key-directory: /root/.icq/keys
+    debug: true
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+cl: {}
